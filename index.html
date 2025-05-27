@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Kişisel Web Sitesi | Atakan ŞAHİN</title>
+    
+    <link rel="shortcut icon" href="/Program Files/ikon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style.css"/>
+    
+    <link
+      href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+      rel='stylesheet'
+      />
+</head>
+<body>
+<!---HEADER START---->
+<header class="header">
+<a href="#home" class="logo"> Atakan <span>ŞAHİN</span> </a>
+
+<i class="bx bx-menu" id="menu-icon"></i>
+
+<nav class="navbar">
+<a href="#home" class="active">Ana Sayfa</a>
+<a href="#education">Eğitimler</a>
+<a href="#services">Hizmetler</a>
+<a href="#contact">İletişim</a>
+</nav>
+</header>
+<!---HEADER END---->
+
+
+<!--HOME START-->
+<section class="home" id="home">
+<div class="home-content">
+    <h1> Merhaba, ben Atakan</h1>
+    <h3 class="text-animation">Ben 
+    <span></span></h3>
+    <p>
+        2003 yılında Ordu'da doğdum ve Ordu'da yaşıyorum.
+        Üniversiteye kadar eğitimimi Ordu'da aldım. Eğitim hayatım sürecince bazı 
+        kurslarda yer aldım ve farklı sektörlerde belirli bir süre çalışmış bulundum.
+        Teknolojiye olan merakım dolasıyıla bu bölüme yöneldim ve bu bölümle alakalı çalışmayı
+        düşünüyorum ve kendimi geliştirmek istiyorum. Bu Kişisel web sitemde de sizlere kendim hakkımda bilgiler vereceğim.
+    </p>
+    <div class="social-icons">
+        <a href="https://instagram.com/atakan.shn_" target="_blank"> <i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/atakan-sahin-a9a94b25b" target="_blank"> <i class='bx bxl-linkedin' ></i> </a>
+        <a href="https://x.com/atakan_shn52" target="_blank"> <i class='bx bxl-twitter'></i> </a>
+        <a href="https://github.com/atakanshn52" target="_blank"> <i class='bx bxl-github'></i> </a>  
+    </div>
+      <style>
+        /* Modal arkaplan */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 999;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0,0,0,0.7);
+        }
+    
+        /* Modal içeriği */
+        .modal-content {
+          background-color: #fff;
+          margin: 5% auto;
+          padding: 20px;
+          width: 80%;
+          max-width: 800px;
+          border-radius: 10px;
+          position: relative;
+        }
+    
+        /* Kapatma butonu */
+        .close {
+          position: absolute;
+          top: -55px;
+          right: -50px;
+          font-size: 60px;
+          cursor: pointer;
+        }
+    
+        iframe {
+          width: 100%;
+          height: 500px;
+          border: none;
+        }
+    
+        .btn {
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          cursor: pointer;
+          text-decoration: none;
+          display: inline-block;
+          margin-top: 10px;
+          border-radius: 5px;
+        }
+      </style>
+    </head>
+    <body>
+    
+    <div class="btn-group">
+      <button class="btn" onclick="openModal()">CV</button>
+    </div>
+    
+    <!-- Modal -->
+    <div id="pdfModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe src="CV.pdf"></iframe>
+        <a href="CV.pdf" download class="btn">PDF'yi İndir</a>
+      </div>
+    </div>
+    
+    <script>
+      function openModal() {
+        document.getElementById("pdfModal").style.display = "block";
+      }
+    
+      function closeModal() {
+        document.getElementById("pdfModal").style.display = "none";
+      }
+    
+      // Modal dışında tıklanırsa kapat
+      window.onclick = function(event) {
+        const modal = document.getElementById("pdfModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+    
+</div>
+</div>
+ 
+<div class="home-img">
+<img src="logo3.png" alt=""/>
+</div>
+</section>
+<!----HOME END---->
+
+<!--EDUCATİON START-->
+<section class="education" id="education">
+<h2  class="heading">Eğitim</h2>
+
+<div class="timeline-items">
+
+    <div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">2010-2017</div>
+<div class="timeline-content">
+    <h3>İLKOKUL-ORTAOKUL</h3>
+    <p>
+       ilkokul 60.Yıl İlköğretim Okulunda okudum. Ana okulu-kreş eğitimi almadım. 4. sınıfta 1 yıl boyunca Menar Aritmetik toplama-çıkarma kursuna gittim.
+       Ortaokulu da 60. Yıl Ortaokulunda okudum. Ortaokulda kendi okulumuz arasında 3 yıl üst üste satranç kursuna ve turnuvasına katıldım,
+       son iki yılda iki kere birincilik madalyası aldım ve yine okul sonrası zeka oyunları kurslarına da katılıyordum.
+       Bununla kalmayıp şiir kurslarına ve gösterilerine katıldım. İlkokul ve ortaokul eğitimim süresince teşekkür belgesi, takdir belgesi ve
+       iftihar belgesi almaya hak kazandım.
+    </p>
+</div>
+</div>
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-date">2017-2021</div>
+    <div class="timeline-content">
+        <h3>LİSE</h3>
+        <p>
+            Ordu Lisesi'nde okudum lakin sadece 9, 10 ve 11. sınıfın ilk dönemi okulda yüzyüze eğitim alabilmiştim. 10.sınıfta sayısal bölümünü seçtim 
+            ama pandemi lise hayatımda denk gelmişti. 11 ve 12. sınfı uzaktan eğitim ile bitirebilmiştim. Mezun olduktan bir süre sonra dershaneye yazıldım.
+            Mühendis bir akrabamın tavsiyesiyle TYT sınavı ile bilgisayar programcılığı yazmıştım.
+        </p>
+    </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2022-2025</div>
+        <div class="timeline-content">
+            <h3>ÜNİVERSİTE</h3>
+            <p>
+                FMV Işık Üniversitesinde hazrılık okumudum lakin o zaman gerçekleşen deprem sebebiyle yüzyüze eğitim yarıda kesilmişti.
+                Bilgisayar programcılığı bölümünü Giresun Üniversitesi'nde okudum derslerimde başarılı ve istekliydim ortalamam 3 üstüydü.
+                Bir kaç proje de yapmıştık. Bu bölümü okurken de bir yandan Giresun Şehit İsmail Bay Halk Eğitimi Merkezinde Bilgisayar İşletmenliği ve
+                TEOL Dil Okullarında B1-B2 seviye İngilizce kursu bitirip ve sertifika almaya hak kazandım. Son yılımda iken Giresun Üniversitesi'nde
+                gerçekleşen DOKAF projesinde gönüllü görev aldım.
+            
+            </p>
+        </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">202?</div>
+            <div class="timeline-content">
+                <h3>MEZUN OLDUKTAN SONRA ki İŞ HAYATI?</h3>
+                <p>
+                                                                                                                                
+                </p>
+            </div>
+            </div>
+</div>
+</section>
+<!--EDUCATİON END-->
+
+<!--SERVİCES START-->
+<section id="services" class="services">
+    <h2 class="heading">Hizmetler</h2>
+
+<div class="services-container">
+    <div class="service-box">
+        <div class="service-info">
+            <h4>Ortaokuldaki İş Hayatım </h4>
+            <p>
+       Ortaokul beşinci sınıftan lise onuncu sınıfa kadar bütün tatillerde berber çıraklığı yaptım.
+       Kendimi geliştirip kalfalığa yükselmiştim lakin pandemi sebebiyle bırakmak zorunda kaldım.
+    
+
+            </p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <div class="service-info">
+            <h4>Liseden Sonra ki Hayatım</h4>
+            <p>
+        Lise bittiğinde fırına çalışmaya girdim. 6 ay kesintisiz çalıştım kalfalığa yükseldim
+        sonra çıkış verdim. Yaz tatillerinde ve hafta sonları ve diğer  tatillerde 
+        çalışmaya devam ettim her departmanında görev aldım (geçici şoför servisci olarak, ekşi maya ustası, kasiyer vs)
+        gece ve gündüz. Bunun dışında yaşadığım memlekette fındık hasadı olduğundan oralarda da çalıştım.
+        Ordu Taşbaşı Kilisesinde 1 günlük garsonluk da yaptım. Akrabamın referansı ile  bir kaç şirkete anonim olarak gizli müşteri/sivil denetimci olarak işler de yaptım ve devam ediyorum.
+            </p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <div class="service-info">
+            <h4>Staj</h4>
+            <p>
+                OSKİ Genel Müdürlüğünde İnsan Kaynakları ve Eğitim Dairesi Başkanlığı (Yazı İşleri ve Kararlar Şube Müdürlüğü) departmanında 14 haftalık bir eğitim aldım.
+            </p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <div class="service-info">
+            <h4>Üniversite Hayatımda ki İş Hayatım</h4>
+            <p>
+        İşkur Gençlik Programında Öğrenci İşlerinde çalıştım. DOKAF Projesinde görev aldım.
+            </p>
+        </div>
+    </div>
+
+</div>
+</section>
+<!--SERVİCES END-->
+
+<!--CONTACT START-->
+<section class="contact" id="contact">
+    <h2 class="heading">Bana<span> Ulaş</span></h2>
+
+    <form action="islem.php" method="POST">
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" name="isim" placeholder="Adınız" required />
+                <input type="email" name="e_posta" placeholder="E-posta" required />
+            </div>
+            <div class="input-box">
+                <input type="text" name="konu" placeholder="Konu" />
+            </div>
+        </div>
+    
+        <div class="input-group-2">
+            <textarea name="mesaj" placeholder="Mesajınız" cols="30" rows="10"></textarea>
+            <input type="submit" value="Mesaj Gönder" class="btn"/>
+        </div>
+    </form>
+</section>
+<!--CONTACT END-->
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Örneği</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <a href="#">Atakan Şahin</a> | Tüm Hakları Saklıdır</p>
+    </footer>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
